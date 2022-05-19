@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <title>CRF | Questionário</title>
+  <link rel="icon" href="assets/img/pngwing.com.png">
+  <link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <h1 id="title">Questionário Flamenguista</h1>
+    <p id="description">Responda algumas perguntas para tornar o maior clube do Brasil ainda maior!</p>
+  </header>
+
+  <!-- FORM INICIO-->
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Andreas Pereira" required>
+        <label id="email-label" for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="xxxxx@mail.com" required>
+        <label id="number-label" for="age">Idade</label>
+        <input type="number" id="number" name="age" min="13" max="120" placeholder="38" required>
+    </fieldset>
+    <fieldset>
+      <p class="question">Informe sua região</p>
+      <select id="dropdown" required>
+        <option value="">Selecione sua região</option>
+        <option value="North">Norte</option>
+        <option value="Northeast">Nordestet</option>
+        <option value="Midwest">Centro-Oeste</option>
+        <option value="Southeast">Sudeste</option>
+        <option value="South">Sul</option>
+        <option value="Other">Fora do Brasil</option>
+      </select>
+      <p class="question">Você já assistiu o Mengão no estádio alguma vez?</p>
+      <label>
+      <input type="radio" name="crowd" value="yes"> Sim
+      </label>
+      <label>
+      <input type="radio" name="crowd" value="no"> Não
+      </label>
+    </fieldset>
+    <fieldset>
+      <p class="question">Quais jogadores você deseja fora do Flamengo?<span id="clue"> (Marque todos que desejar)</p>
+      <label>
+        <input type="checkbox" value="Diego Alves" name="player"> Diego Alves</input>
+      </label>
+      <label>
+        <input type="checkbox" value="Willian Arão" name="player"> Willian Arão</input>
+      </label>
+      <label>
+        <input type="checkbox" value="Rodinei" name="player"> Rodinei</input>
+      </label>
+      <label>
+        <input type="checkbox" value="Mauricio Isla" name="player"> Mauricio Isla</input>
+      </label>
+      <label>
+        <input type="checkbox" value="Andreas Pereira" name="player"> Andreas Pereira</input>
+      </label>
+      <label>
+        <input type="checkbox" value="Diego Ribas" name="player"> Diego Ribas</input>
+      </label>
+      <label>
+        <input type="checkbox" value="Marinho" name="player"> Marinho</input>
+      </label>
+      <label>
+        <input type="checkbox" value="Hugo Souza" name="player"> Hugo Souza</input>
+      </label>
+      <label>
+        <input type="checkbox" value="Gabigol" name="player"> Gabigol</input>
+      </label>
+      <label>
+        <input type="checkbox" value="Arrascaeta" name="player"> Arrascaeta</input>
+      </label>
+      <label>
+      <p class="question">Escreva uma sugestão ou crítica detalhada</p>
+      <textarea id="suggestions name="suggestions placeholder="Type Here..."></textarea>
+    </label>
+    <button type="submit" id="submit" value="submit">Enviar</button> 
+  </form>
+    </fieldset>
+
+    <!-- FOOTER -->
+
+    <footer id="footer">
+      <p>Todos os direitos reservados ao <a href="https://www.flamengo.com.br/" target="_blank">Clube de Regatas do Flamengo</a></p>
+    </footer>
+</body>
+</html>
